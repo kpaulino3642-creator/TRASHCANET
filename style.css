@@ -467,632 +467,236 @@ header > * {
 .discover-card p {
     color: #666;
 }
-
-/* ============================= */
-/* MEMBER CARDS */
-/* ============================= */
-
-.member-card {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    min-height: 250px;
-    background-color: whitesmoke;
-    padding: 35px;
-    border: 1px solid #050505;
-    border-radius: 10px;
-    transition: 0.3s ease;
-}
-
-/* MEMBER INFORMATION */
-
-.member-info {
-    position: relative;
-    z-index: 4;
-    transition: 0.4s ease;
-}
-
-.member-info h2,
-.member-info p,
-.member-info .number {
-    position: relative;
-    z-index: 4;
-}
-
-/* MEMBER IMAGE */
-
-.member-image-container {
-    position: absolute;
-    inset: 0;
-
-    opacity: 0;
-    visibility: hidden;
-
-    transition: 0.4s ease;
-
-    z-index: 3;
-}
-
-.member-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-/* DARK OVERLAY */
-
-.member-image-container::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-
-    background: rgba(0, 0, 0, 0.50);
-
-    z-index: 1;
-}
-
-/* CARD HOVER */
-
-.member-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px rgb(4, 138, 4);
-}
-
-.member-card:hover .member-image-container {
-    opacity: 1;
-    visibility: visible;
-}
-
-/* TEXT WHEN IMAGE APPEARS */
-
-.member-card:hover .member-info h2,
-.member-card:hover .member-info p {
-    color: white;
-}
-
-.member-card:hover .member-info .number {
-    color: #06b900;
-}
-
-.discover-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-/* CENTER THE 7TH MEMBER */
-.member-card:nth-child(7) {
-    grid-column: 2;
-}
-/*AUDIO*/
-
-.audio-section {
-    position: relative;
-    min-height: 500px;
-    overflow: hidden;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
- background-color: #1b1b1b;
-    text-align: center;
-}
-
-
-
-/* VIDEO BACKGROUND */
-.section-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-opacity: 50%;
-    object-fit: cover;
-    z-index: 0;
-}
-
-/* DARK OVERLAY */
-.video-overlay {
-    position: absolute;
-    inset: 0;
-
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-/* CONTENT ABOVE VIDEO */
-.audio-content {
-    position: relative;
-    z-index: 2;
-
-    color: white;
-    max-width: 800px;
-    padding: 40px 20px;
-}
-
-.audio-content h2 {
-    color: #06b900;
-}
-
-.audio-content p {
-    color: white;
-}
-
-/* AUDIO PLAYER */
-.audio-content audio {
-    margin-top: 20px;
-    width: 350px;
-    max-width: 90%;
-}
-
-/*CONTACT*/
-
-.contact {
-    max-width: 1100px;
-    margin: auto;
-    padding: 100px 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-}
-
-
-.contact-info h1 {
-    font-size: 70px;
-    line-height: 1;
-    letter-spacing: -3px;
-    margin-bottom: 25px;
-}
-
-
-.contact-info h1 span {
-    display: block;
-    color: #8b6f47;
-}
-
-
-.contact-info>p:not(.subtitle) {
-    color: #666;
-    max-width: 450px;
-    margin-bottom: 40px;
-}
-
-
-/*CONTACT DETAILS*/
-
-.contact-details {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-
-.detail h3 {
-    font-size: 13px;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
-    color: #06b900;
-}
-
-
-.detail p {
-    color: #ffffff;
-}
-
-
-/*CONTACT FORM*/
-.form-container:hover{
-    box-shadow: 10px 10px 30px rgb(4, 138, 4);
-     transform: translateY(-5px);
-
-}
-.form-container {
-    background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-
-form label {
-    font-size: 13px;
-    font-weight: bold;
-    margin-top: 15px;
-    margin-bottom: 7px;
-}
-
-
-form input,
-form textarea {
-    width: 100%;
-    padding: 14px;
-    border: 1px solid #ccc;
-    background-color: #fafafa;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    outline: none;
-    border-radius: 10px;
-}
-
-
-form input:focus,
-form textarea:focus {
-    border-color: #06b900;
-}
-
-
-form textarea {
-    resize: vertical;
-    margin-bottom: 20px;
-}
-
-
-form button {
-    padding: 15px;
-    background-color: #1b1b1b;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    letter-spacing: 1px;
-    transition: 0.3s;
-    border-radius: 10px;
-}
-
-
-form button:hover {
-    background-color: #06b900;
-}
-
-
-/*FOOTER*/
-
-footer {
-    background-color: #484848;
-    color: white;
-    text-align: center;
-    padding: 20px 5px;
-    border-top: floralwhite;
-}
-
-
-footer h2 {
-    letter-spacing: 3px;
-    margin-bottom: 10px;
-}
-
-
-footer p {
-    color: #aaa;
-}
-
-
-footer .Kyle Paulino {
-    margin-top: 20px;
-    font-size: 12px;
-}
-
-.trash1 {
-    color: #06b900;
-}
-
-.net1 {
-    color: white;
-}
-
-
 /* ========================================= */
-/* MOBILE RESPONSIVENESS */
+/* MOBILE RESPONSIVE */
 /* ========================================= */
 
-@media (max-width: 768px;) {
+@media (max-width: 768px) {
 
-    /* ============================= */
-    /* GENERAL */
-    /* ============================= */
-
-    body {
-        overflow-x: hidden;
-    }
-
-    /* ============================= */
-    /* NAVIGATION */
-    /* ============================= */
+    /* ===== NAVIGATION ===== */
 
     .navbar {
+        width: 100%;
         padding: 20px;
+        display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 20px;
-        text-align: center;
     }
 
-    .logo {
-        font-size: 22px;
+    .logo h1 {
+        font-size: 24px;
+        margin: 0;
     }
 
     .nav-links {
         width: 100%;
+        display: flex;
         justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         gap: 15px;
     }
 
     .nav-links a {
         font-size: 12px;
-    }
-
-
-    /* ============================= */
-    /* COMMON TEXT */
-    /* ============================= */
-
-    .subtitle {
-        font-size: 11px;
-        letter-spacing: 2px;
-    }
-
-    .description {
-        font-size: 15px;
-    }
-
-
-    /* ============================= */
-    /* HOME HERO */
-    /* ============================= */
-
-    .hero {
-        width: 100%;
-        padding: 60px 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
         text-align: center;
     }
 
-    .hero-content h1 {
-        font-size: 48px;
-        line-height: 1;
-        letter-spacing: -2px;
-    }
 
-    .hero-content .description {
-        margin: auto;
-    }
-
-    .hero-image {
-        width: 100%;
-        height: 400px;
-        grid-template-columns: 2fr 1fr;
-        gap: 10px;
-    }
-
-
-    /* ============================= */
-    /* VIDEO SECTION */
-    /* ============================= */
-
-    .video-section {
-        padding: 0 20px;
-        margin-top: 30px;
-    }
-
-    .video-section h2 {
-        font-size: 38px;
-    }
-
-    .video-layout {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 30px;
-    }
-
-    .main-video {
-        height: 300px;
-    }
-
-    .second-video {
-        height: 200px;
-    }
-
-    .main-video video,
-    .second-video video {
-        width: 100%;
-        height: 100%;
-    }
-
-    .video-description {
-        padding: 20px;
-    }
-
-
-    /* ============================= */
-    /* HIGHLIGHTS */
-    /* ============================= */
-
-    .highlights {
-        width: 100%;
-        padding: 50px 20px 70px;
-        display: flex;
-        flex-direction: column;
-        gap: 35px;
-    }
-
-    .highlight {
-        padding-top: 15px;
-    }
-
-
-    /* ============================= */
-    /* ABOUT HERO */
-    /* ============================= */
+    /* ===== ABOUT HERO ===== */
 
     .about-hero {
         width: 100%;
         padding: 70px 20px;
+        text-align: left;
+    }
+
+    .about-hero .subtitle {
+        font-size: 11px;
+        letter-spacing: 2px;
     }
 
     .about-hero h1 {
-        font-size: 48px;
+        font-size: 45px !important;
+        line-height: 1;
         letter-spacing: -2px;
+        margin: 15px 0;
     }
 
-    .about-hero>p:last-child {
-        font-size: 16px;
+    .about-hero > p:last-child {
+        font-size: 15px;
+        line-height: 1.6;
+        max-width: 100%;
     }
 
 
-    /* ============================= */
-    /* DARK ABOUT SECTION */
-    /* ============================= */
+    /* ===== OUR PURPOSE ===== */
 
     .dark-section {
+        width: 100%;
         padding: 70px 20px;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .about-content .subtitle {
+        font-size: 11px;
+        letter-spacing: 2px;
     }
 
     .about-content h2 {
-        font-size: 40px;
+        font-size: 36px;
+        line-height: 1.1;
+        margin: 15px 0 25px;
     }
 
-    .about-content p:not(.subtitle) {
+    .about-content p {
         font-size: 15px;
+        line-height: 1.7;
     }
 
 
-    /* ============================= */
-    /* DISCOVER */
-    /* ============================= */
+    /* ===== TEAM ===== */
 
     .discover {
+        width: 100%;
         padding: 70px 20px;
     }
 
+    .discover > .subtitle {
+        font-size: 11px;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+    }
+
     .discover-grid {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 20px;
-    }
-
-    .discover-card {
-        width: 100%;
-        min-height: 220px;
-        padding: 25px;
+        gap: 25px;
     }
 
 
-    /* ============================= */
-    /* MEMBER CARDS */
-    /* ============================= */
+    /* ===== MEMBER CARDS ===== */
 
     .member-card {
         width: 100%;
-        min-height: 250px;
+        min-height: 400px;
         padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
-    /* Remove desktop centering of 7th member */
+    .member-info {
+        width: 100%;
+    }
+
+    .member-info .number {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .member-info h2 {
+        font-size: 32px;
+        line-height: 1;
+        margin-bottom: 15px;
+    }
+
+    .member-info p {
+        font-size: 13px;
+        line-height: 1.5;
+        max-width: 250px;
+    }
+
+    .member-image-container {
+        width: 100%;
+        height: 220px;
+        margin-top: 25px;
+    }
+
+    .member-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Center member 07 is no longer needed on mobile */
     .member-card:nth-child(7) {
         grid-column: auto;
     }
 
-    /*
-       On phones there is no need to
-       force the 7th member into column 2.
-    */
 
-
-    /* ============================= */
-    /* AUDIO SECTION */
-    /* ============================= */
+    /* ===== AUDIO / VIDEO SECTION ===== */
 
     .audio-section {
-        min-height: 450px;
-        padding: 30px 20px;
+        width: 100%;
+        min-height: 550px;
+        padding: 40px 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .section-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .video-overlay {
+        width: 100%;
+        height: 100%;
     }
 
     .audio-content {
         width: 100%;
-        padding: 30px 15px;
+        max-width: 100%;
+        padding: 30px 20px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .audio-content .subtitle {
+        font-size: 11px;
+        letter-spacing: 2px;
     }
 
     .audio-content h2 {
         font-size: 35px;
+        line-height: 1;
+        margin: 15px 0 20px;
+    }
+
+    .audio-content p {
+        font-size: 14px;
+        line-height: 1.6;
     }
 
     .audio-content audio {
         width: 100%;
         max-width: 350px;
+        margin-top: 20px;
     }
 
 
-    /* ============================= */
-    /* CONTACT */
-    /* ============================= */
-
-    .contact {
-        width: 100%;
-        padding: 70px 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .contact-info h1 {
-        font-size: 48px;
-        letter-spacing: -2px;
-    }
-
-    .contact-info>p:not(.subtitle) {
-        font-size: 15px;
-        margin-bottom: 30px;
-    }
-
-    .contact-details {
-        gap: 20px;
-    }
-
-
-    /* ============================= */
-    /* CONTACT FORM */
-    /* ============================= */
-
-    .form-container {
-        width: 100%;
-        padding: 25px;
-    }
-
-    form input,
-    form textarea {
-        font-size: 14px;
-        padding: 13px;
-    }
-
-
-
-    /* FOOTER */
-
+    /* ===== FOOTER ===== */
 
     footer {
-        padding: 25px 15px;
+        width: 100%;
+        padding: 35px 20px;
+        text-align: center;
     }
 
     footer h2 {
-        font-size: 20px;
-        letter-spacing: 2px;
+        font-size: 22px;
     }
 
     footer p {
-        font-size: 13px;
+        font-size: 12px;
+        line-height: 1.5;
     }
 
 }
@@ -1104,10 +708,15 @@ footer .Kyle Paulino {
 
 @media (max-width: 480px) {
 
-    /* NAVIGATION */
+    /* NAV */
 
     .navbar {
         padding: 18px 15px;
+        gap: 15px;
+    }
+
+    .logo h1 {
+        font-size: 21px;
     }
 
     .nav-links {
@@ -1119,90 +728,92 @@ footer .Kyle Paulino {
     }
 
 
-    /* HERO */
-
-    .hero {
-        padding: 50px 15px;
-    }
-
-    .hero-content h1 {
-        font-size: 40px;
-    }
-
-    .hero-image {
-        height: 320px;
-        gap: 8px;
-    }
-
-
-    /* VIDEO */
-
-    .video-section {
-        padding: 0 15px;
-    }
-
-    .video-section h2 {
-        font-size: 32px;
-    }
-
-    .main-video {
-        height: 230px;
-    }
-
-    .second-video {
-        height: 170px;
-    }
-
-
-    /* ABOUT */
+    /* ABOUT HERO */
 
     .about-hero {
         padding: 60px 15px;
     }
 
     .about-hero h1 {
-        font-size: 40px;
+        font-size: 38px !important;
     }
+
+    .about-hero > p:last-child {
+        font-size: 14px;
+    }
+
+
+    /* PURPOSE */
 
     .dark-section {
         padding: 60px 15px;
     }
 
     .about-content h2 {
-        font-size: 34px;
+        font-size: 30px;
+    }
+
+    .about-content p {
+        font-size: 14px;
     }
 
 
-    /* DISCOVER */
+    /* TEAM */
 
     .discover {
         padding: 60px 15px;
     }
 
-    .discover-card {
-        padding: 22px;
+    .member-card {
+        min-height: 360px;
+        padding: 20px;
+    }
+
+    .member-info h2 {
+        font-size: 28px;
+    }
+
+    .member-info p {
+        font-size: 12px;
+    }
+
+    .member-image-container {
+        height: 190px;
     }
 
 
     /* AUDIO */
 
+    .audio-section {
+        min-height: 500px;
+        padding: 30px 15px;
+    }
+
+    .audio-content {
+        padding: 25px 15px;
+    }
+
     .audio-content h2 {
-        font-size: 30px;
+        font-size: 29px;
+    }
+
+    .audio-content p {
+        font-size: 13px;
     }
 
 
-    /* CONTACT */
+    /* FOOTER */
 
-    .contact {
-        padding: 60px 15px;
+    footer {
+        padding: 30px 15px;
     }
 
-    .contact-info h1 {
-        font-size: 40px;
+    footer h2 {
+        font-size: 20px;
     }
 
-    .form-container {
-        padding: 20px;
+    footer p {
+        font-size: 11px;
     }
 
 }
