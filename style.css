@@ -788,3 +788,421 @@ footer .Kyle Paulino {
 .net1 {
     color: white;
 }
+
+
+/* ========================================= */
+/* MOBILE RESPONSIVENESS */
+/* ========================================= */
+
+@media (max-width: 768px) {
+
+    /* ============================= */
+    /* GENERAL */
+    /* ============================= */
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* ============================= */
+    /* NAVIGATION */
+    /* ============================= */
+
+    .navbar {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+
+    /* ============================= */
+    /* COMMON TEXT */
+    /* ============================= */
+
+    .subtitle {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+
+    /* ============================= */
+    /* HOME HERO */
+    /* ============================= */
+
+    .hero {
+        width: 100%;
+        padding: 60px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+        line-height: 1;
+        letter-spacing: -2px;
+    }
+
+    .hero-content .description {
+        margin: auto;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 400px;
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+    }
+
+
+    /* ============================= */
+    /* VIDEO SECTION */
+    /* ============================= */
+
+    .video-section {
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+
+    .video-section h2 {
+        font-size: 38px;
+    }
+
+    .video-layout {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .main-video {
+        height: 300px;
+    }
+
+    .second-video {
+        height: 200px;
+    }
+
+    .main-video video,
+    .second-video video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .video-description {
+        padding: 20px;
+    }
+
+
+    /* ============================= */
+    /* HIGHLIGHTS */
+    /* ============================= */
+
+    .highlights {
+        width: 100%;
+        padding: 50px 20px 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .highlight {
+        padding-top: 15px;
+    }
+
+
+    /* ============================= */
+    /* ABOUT HERO */
+    /* ============================= */
+
+    .about-hero {
+        width: 100%;
+        padding: 70px 20px;
+    }
+
+    .about-hero h1 {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+    .about-hero>p:last-child {
+        font-size: 16px;
+    }
+
+
+    /* ============================= */
+    /* DARK ABOUT SECTION */
+    /* ============================= */
+
+    .dark-section {
+        padding: 70px 20px;
+    }
+
+    .about-content h2 {
+        font-size: 40px;
+    }
+
+    .about-content p:not(.subtitle) {
+        font-size: 15px;
+    }
+
+
+    /* ============================= */
+    /* DISCOVER */
+    /* ============================= */
+
+    .discover {
+        padding: 70px 20px;
+    }
+
+    .discover-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .discover-card {
+        width: 100%;
+        min-height: 220px;
+        padding: 25px;
+    }
+
+
+    /* ============================= */
+    /* MEMBER CARDS */
+    /* ============================= */
+
+    .member-card {
+        width: 100%;
+        min-height: 250px;
+        padding: 25px;
+    }
+
+    /* Remove desktop centering of 7th member */
+    .member-card:nth-child(7) {
+        grid-column: auto;
+    }
+
+    /*
+       On phones there is no need to
+       force the 7th member into column 2.
+    */
+
+
+    /* ============================= */
+    /* AUDIO SECTION */
+    /* ============================= */
+
+    .audio-section {
+        min-height: 450px;
+        padding: 30px 20px;
+    }
+
+    .audio-content {
+        width: 100%;
+        padding: 30px 15px;
+    }
+
+    .audio-content h2 {
+        font-size: 35px;
+    }
+
+    .audio-content audio {
+        width: 100%;
+        max-width: 350px;
+    }
+
+
+    /* ============================= */
+    /* CONTACT */
+    /* ============================= */
+
+    .contact {
+        width: 100%;
+        padding: 70px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contact-info h1 {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+    .contact-info>p:not(.subtitle) {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .contact-details {
+        gap: 20px;
+    }
+
+
+    /* ============================= */
+    /* CONTACT FORM */
+    /* ============================= */
+
+    .form-container {
+        width: 100%;
+        padding: 25px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 14px;
+        padding: 13px;
+    }
+
+
+
+    /* FOOTER */
+
+
+    footer {
+        padding: 25px 15px;
+    }
+
+    footer h2 {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+
+}
+
+
+/* ========================================= */
+/* SMALL PHONES */
+/* ========================================= */
+
+@media (max-width: 480px) {
+
+    /* NAVIGATION */
+
+    .navbar {
+        padding: 18px 15px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 10px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-image {
+        height: 320px;
+        gap: 8px;
+    }
+
+
+    /* VIDEO */
+
+    .video-section {
+        padding: 0 15px;
+    }
+
+    .video-section h2 {
+        font-size: 32px;
+    }
+
+    .main-video {
+        height: 230px;
+    }
+
+    .second-video {
+        height: 170px;
+    }
+
+
+    /* ABOUT */
+
+    .about-hero {
+        padding: 60px 15px;
+    }
+
+    .about-hero h1 {
+        font-size: 40px;
+    }
+
+    .dark-section {
+        padding: 60px 15px;
+    }
+
+    .about-content h2 {
+        font-size: 34px;
+    }
+
+
+    /* DISCOVER */
+
+    .discover {
+        padding: 60px 15px;
+    }
+
+    .discover-card {
+        padding: 22px;
+    }
+
+
+    /* AUDIO */
+
+    .audio-content h2 {
+        font-size: 30px;
+    }
+
+
+    /* CONTACT */
+
+    .contact {
+        padding: 60px 15px;
+    }
+
+    .contact-info h1 {
+        font-size: 40px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+}
